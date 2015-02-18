@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("BlueMoteServer")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Bluetooth server companion to the BlueMote mobile app.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Frank E. Hernandez")]
 [assembly: AssemblyProduct("BlueMoteServer")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]

@@ -65,7 +65,7 @@ namespace BlueMoteServer
 
         static void Main(string[] args)
         {
-            Guid serviceClass = new Guid("{39913A2D-EB93-40ff-BBB8-DEEE26452197}"); ;
+            Guid serviceClass = new Guid("{1d374b6f-4e12-4126-abec-5e92daf7c434}");
 
             //serviceClass = BluetoothService.SerialPort;
 
