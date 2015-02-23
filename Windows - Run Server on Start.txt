@@ -1,0 +1,10 @@
+1 - Open Regedit.exe
+2 - Go to HKey_Local_Machine\Software\Microsoft\Windows\CurrentVersion\Run
+3 - From the Edit menu, click Add String Value. Type the following and click OK:
+	Value Name: BlueMoteServer
+	Data Type : REG_SZ
+	String : <path>\<BlueMoteServer.exe>
+
+	where <path>\<BlueMoteServer.exe> is the drive and full path to the application executable including the extension where the server was installed (i.e., C:\Temp\BlueMoteServer.exe)
+
+Close Registry Editor.

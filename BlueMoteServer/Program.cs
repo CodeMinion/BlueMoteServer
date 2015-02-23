@@ -12,6 +12,8 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Collections;
+using System.ServiceProcess;
 
 namespace BlueMoteServer
 {
@@ -67,6 +69,15 @@ namespace BlueMoteServer
         {
             Guid serviceClass = new Guid("{1d374b6f-4e12-4126-abec-5e92daf7c434}");
 
+            ServiceController controler = new ServiceController("bthserv");
+
+            Console.WriteLine("Waiting for Bluetooth Service to Start..."); 
+            // Wait for bluetooth server to start.
+            while (controler.Status != ServiceControllerStatus.Running)
+            {
+                Thread.Sleep(1000);
+                controler.Refresh();
+            }
             //serviceClass = BluetoothService.SerialPort;
 
             var lsnt = new BluetoothListener(serviceClass);
